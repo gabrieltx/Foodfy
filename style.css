@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div.main {
+    width: 940px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    display: block;
+    position: relative;
+}
+
+div#menu {
+    margin: 30px 0;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    position: absolute;
+    right: 50%;
+    top: 5px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111111;
+    padding: 5px 15px;
+    border-bottom: 1px solid rgba(192, 192, 192, 0);
+    -webkit-transition: border 500ms ease;
+    -moz-transition: border 500ms ease;
+    -ms-transition: border 500ms ease;
+    -o-transition: border 500ms ease;
+    transition: border 500ms ease; 
+}
+
+nav a:hover {
+    border-bottom: 1px solid rgba(192, 192, 192, 1);
+}
+
+/* BANNER */
+
+div.banner {
+    width: 100%;
+    height: 366px;
+    background: #FBDFDB;
+    border-radius: 30px;
+    position: relative;
+}
+
+div.bannerImg {
+    position: absolute;
+    margin-top: 36px; 
+    right: 10%;
+}
+
+div.bannerText {
+    max-width: 316px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 120px;
+}
+
+.bannerText h1 {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #111111;
+}
+
+.bannerText p {
+    margin-top: 10px;
+    opacity: 0.7;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+}
+
+/* CONTENT */
+
+.content p {
+    margin-top: 50px;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+div.cards {
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+div.card {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+div.card img {
+    max-width: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+div.recipeTitle {
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #111111;
+}
+
+div.recipeOwner {
+    margin-top: 5px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #777777;
+}
+
+footer {
+    margin: auto;
+    background: #EEEEEE;
+    margin-top: 50px;
+    height: 62px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #999999;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* ABOUT */
+
+div.subContent {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    color: #111111;
+}
+
+div.aboutText {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
