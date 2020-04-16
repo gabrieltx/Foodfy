@@ -63,6 +63,7 @@ div.banner {
     background: #FBDFDB;
     border-radius: 30px;
     position: relative;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.2)
 }
 
 div.bannerImg {
@@ -233,4 +234,67 @@ div.modal h3 {
     color: #999999;
     text-align: center;
     cursor: pointer;
+}
+
+/* DETAIL */
+
+div.detailImg {
+    max-width: 940px;
+    height: 280px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+div.detailImg img {
+    border-radius: 15px;
+}
+
+div.detailTitle {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+div.detailTitle h1 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    color: #111111;
+}
+
+div.detailTitle h2 {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #777777;
+}
+
+div.subTitles {
+    display: flex;
+    margin-top: 40px;
+    text-align: left;
+}
+
+div.subTitles h1 {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 24px;
+    color: #111111;
+}
+
+div.subTitles a {
+    margin-left: 8px;
+    margin-top: auto;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 12px;
+    color: #999999;
+}
+
+div.ingredients, .preparation, .information {
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    list-style-position: inside
 }
