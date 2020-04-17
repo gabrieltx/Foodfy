@@ -119,7 +119,8 @@ div.card {
 
 div.card img {
     max-width: 300px;
-    object-fit: contain;
+    height: 140px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -288,6 +289,7 @@ div.subTitles a {
     font-weight: 600;
     font-size: 12px;
     color: #999999;
+    cursor: pointer;
 }
 
 div.ingredients, .preparation, .information {
@@ -297,4 +299,15 @@ div.ingredients, .preparation, .information {
     color: #444444;
     line-height: 28px;
     list-style-position: inside
+}
+
+.recipeContent {
+    visibility: visible;
+    opacity: 1;
+}
+
+.recipeContent.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
 }

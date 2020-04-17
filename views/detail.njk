@@ -1,53 +1,65 @@
 {% extends "layout.njk" %}
 
 {% block title %}
-<title>Foodfy - </title>
+    <title>Foodfy - {{recipe.title}}</title>
 {% endblock %}
 
 {% block content %}
 
 <div class="detailImg">
-    <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png" alt="">
+    <img src={{recipe.image}} alt="{{recipe.title}}">
 </div>
 
 <div class="detailTitle">
-    <h1>Triple Bacon Burguer</h1>
-    <h2>by Jorge</h2>
+    <h1>{{recipe.title}}</h1>
+    <h2>by {{recipe.author}}</h2>
 </div>
 
-<div class="subTitles">
-    <h1>Ingredients</h1>
-    <a id="hide">Hide</a>
+<div class="details">
+    <div class="subTitles">
+        <h1>Ingredients</h1>
+        <a>Show</a>
+    </div>
+
+    <div class="recipeContent hidden">
+        <div class="ingredients">
+            <ul>
+                {% for ingredient in recipe.ingredients %}
+                <li>{{ingredient}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </div>
 
-<div class="ingredients">
-    <ul>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-    </ul>
+<div class="details">
+    <div class="subTitles">
+        <h1>Preparation</h1>
+        <a>Show</a>
+    </div>
+
+    <div class="recipeContent hidden">
+        <div class="preparation">
+            <ul>
+                {% for item in recipe.preparation%}
+                <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </div>
 
-<div class="subTitles">
-    <h1>Preparation</h1>
-    <a id="hide">Hide</a>
-</div>
+<div class="details">
+    <div class="subTitles">
+        <h1>Additional information</h1>
+        <a>Show</a>
+    </div>
 
-<div class="preparation">
-    <ul>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-    </ul>
-</div>
-
-<div class="subTitles">
-    <h1>Additional information</h1>
-    <a id="hide">Hide</a>
-</div>
-
-<div class="information">
-    <p>Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres!</p>
+    <div class="recipeContent hidden">
+        <div class="information">
+            <p>{{recipe.information}}</p>
+        </div>
+    </div>
 </div>
 
 {% endblock %}
