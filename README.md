@@ -16,3 +16,9 @@
   <a href="LICENSE" >
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
+  
+  <a href="https://www.linkedin.com/in/gabrielmteixeira/" >
+    <img alt="LinkedIn" src="https://img.shields.io/badge/-gabrielteixeira-%230077B5?style=social&logo=linkedin">
+  </a>
+
+## Construindo Foodfy
