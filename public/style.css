@@ -25,6 +25,17 @@ div#menu {
     display: flex;
 }
 
+#menu-admin {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+#menu-admin img {
+    margin: auto;
+    padding-top: 25px;
+}
+
 nav ul {
     list-style: none;
     position: absolute;
@@ -96,7 +107,8 @@ div.bannerText {
 
 /* CONTENT */
 
-.content p {
+.content p,
+.admin-title {
     margin-top: 50px;
     font-family: Roboto;
     font-weight: 600;
@@ -310,4 +322,26 @@ div.ingredients, .preparation, .information {
     visibility: hidden;
     opacity: 0;
     height: 0;
+}
+
+/* ADMIN */
+
+.admin-cards {
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.admin-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.admin-card img{
+    max-width: 172px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8.57px;
 }
