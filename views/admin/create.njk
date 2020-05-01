@@ -1,0 +1,12 @@
+{% extends "admin-layout.njk" %}
+
+{% block content%}
+
+<form method="POST" action="/admin/recipes">
+
+<h2>New Recipe</h2>
+{% include 'admin/fields.njk'%}
+
+</form>
+
+{%endblock%}
