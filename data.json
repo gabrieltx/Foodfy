@@ -5,18 +5,16 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
       "title": "Asinhas de frango ao barbecue",
       "author": "Vania Steroski",
-      "ingredients": "12 encontros de asinha de galinha, temperados a gosto",
-      "preparation": "Em uma tigela coloque o encontro de asinha de galinha e polvilhe a farinha de trigo e misture com as mãos.",
-      "information": "null"
-    },
-    {
-      "id": 2,
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
-      "title": "Test Edit",
-      "author": "Test",
-      "ingredients": "Teste",
-      "preparation": "test",
-      "information": "test"
+      "ingredients": [
+        "item 1",
+        "item 2",
+        "item 3"
+      ],
+      "preparation": [
+        "a",
+        "n"
+      ],
+      "information": "aaaaaaaaaaaa\r\n\r\nbbbbbbbbbbb"
     }
   ]
 }

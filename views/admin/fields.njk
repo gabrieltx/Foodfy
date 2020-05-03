@@ -33,33 +33,55 @@
 
 <div class="item">
     <div class="item-title">Recipe Ingredients</div>
-    <div>
-        <input 
-        type="text"
-        name="ingredients"
-        value="{{recipe.ingredients}}">
+    <div id="ingredients">
+        <div class="ingredient">
+        {% if recipe %}
+            {% for ingredient in recipe.ingredients %}
+                <input 
+                type="text"
+                name="ingredients[]"
+                value="{{ingredient}}">
+            {% endfor %}
+        {% else %}
+            <input 
+            type="text"
+            name="ingredients[]">
+        {% endif %}
+        </div>
     </div>
+    <button type="button" class="add-ingredient">Add Ingredient</button>
 </div>
 
 <div class="item">
     <div class="item-title">Recipe Preparation</div>
-    <div>
-        <input 
-        type="text"
-        name="preparation"
-        value="{{recipe.preparation}}">
+    <div id="steps">
+        <div class="step">
+        {% if recipe %}
+            {% for step in recipe.preparation %}
+                <input 
+                type="text"
+                name="preparation[]"
+                value="{{step}}">
+            {% endfor %}
+        {% else %}
+            <input 
+            type="text"
+            name="preparation[]">
+        {% endif %}
+        </div>
     </div>
+    <button type="button" class="add-step">Add Step</button>
 </div>
 
 <div class="item" >
     <div class="item-title">Recipe Information</div>
     <div>
-        <input
-        id="info" 
-        type="text"
-        name="information"
-        value="{{recipe.information}}">
+        <textarea 
+        id="info"
+        name="information" 
+        value="{{recipe.information}}"></textarea>
     </div>
+    
 </div>
 
 

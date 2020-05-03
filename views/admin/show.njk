@@ -1,6 +1,14 @@
 {% extends "admin-layout.njk" %}
 {% block content %}
 
+
+
+<div class="create">
+    <h2>Recipe: {{recipe.title}}</h2>
+    <a href="/admin/recipes/{{recipe.id}}/edit">Edit</a>
+</div>
+
+
 <div class="detailImg">
     <img src={{recipe.image}} alt="{{recipe.title}}">
 </div>
@@ -13,10 +21,9 @@
 <div class="details">
     <div class="subTitles">
         <h1>Ingredients</h1>
-        <a>Show</a>
     </div>
 
-    <div class="recipeContent hidden">
+    <div class="recipeContent">
         <div class="ingredients">
             <ul>
                 {% for ingredient in recipe.ingredients %}
@@ -30,10 +37,9 @@
 <div class="details">
     <div class="subTitles">
         <h1>Preparation</h1>
-        <a>Show</a>
     </div>
 
-    <div class="recipeContent hidden">
+    <div class="recipeContent">
         <div class="preparation">
             <ul>
                 {% for item in recipe.preparation%}
@@ -47,10 +53,9 @@
 <div class="details">
     <div class="subTitles">
         <h1>Additional information</h1>
-        <a>Show</a>
     </div>
 
-    <div class="recipeContent hidden">
+    <div class="recipeContent">
         <div class="information">
             <p>{{recipe.information}}</p>
         </div>
