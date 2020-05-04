@@ -337,17 +337,42 @@ div.ingredients, .preparation, .information {
     gap: 20px;
 }
 
-.admin-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.card-img{
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.admin-card img{
+.card-content{
+    display: inline-block;
+    position: absolute;
+}
+
+.AdmRecipeTitle {
+    font-size: 18px;
+    color: #111111;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.AdmRecipeOwner {
+    font-size: 14px;
+    color: #777777;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.card-img img{
     max-width: 172px;
     height: 80px;
     object-fit: cover;
     border-radius: 8.57px;
+}
+
+.card-content a {
+    font-size: 14px;
+    color: #6558C3;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 input {
@@ -397,8 +422,54 @@ textarea {
     cursor: pointer;
 }
 
+button.delete {
+    display: inline-block;
+    width: 92px;
+    height: 37px;
+    color: white;
+    background-color: #DC4747;
+    border-radius: 4px;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
 .create a {
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.add-ingredient,
+.add-step {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #6558C3;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.new-recipe {
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 139px;
+    height: 37px;
+    color: white;
+    background-color: #6558C3;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }

@@ -2,22 +2,31 @@
 
 {% block content %}
 <h1 class="admin-title">Manage Recipes</h1>
-<a href="/admin/recipes/create">New Recipe</a>
+<a class="new-recipe" href="/admin/recipes/create">New Recipe</a>
+
+
 
 <div class="admin-cards">  
 
     {% for item in items %}
+
         <div class="admin-card" id="{{item.title}}">
-            <img src={{item.image}} alt={{item.title}}>
+
+            <div class="card-img">
+                <img src={{item.image}} alt={{item.title}}>
+            </div>
+            
+
             <div class="card-content">
-                <div class="recipeTitle">
-                    <p id="recipeTitle">{{item.title}}</p>
+                <div class="AdmRecipeTitle">
+                    {{item.title}}
                 </div>
-                <div class="recipeOwner">
-                    <p id="recipeOwner">by {{item.author}}</p>
+                <div class="AdmRecipeOwner">
+                    by {{item.author}}
                 </div>
                 <a class="view" href="/admin/recipes/{{item.id}}">View</a>
             </div>
+
         </div>
     {% endfor %}
 

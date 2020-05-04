@@ -2,11 +2,21 @@
 
 {% block content%}
 
+<form id="form-delete" action="/admin/recipes?_method=DELETE" method="post">
+
+    <input type="hidden" name="id" value="{{recipe.id}}">
+    
+    
+    <button type="submit" class="delete">Delete</button>
+    
+
+</form>
+
 <form method="POST" action="/admin/recipes?_method=PUT">
 
     <div class="create">
         <h2>Edit Recipe</h2>
-        <button type="submit">Save</button>
+        <button type="submit">Save Recipe</button>
     </div>
 
     {% include 'admin/fields.njk'%}
@@ -15,16 +25,7 @@
 
 </form>
 
-<form id="form-delete" action="/admin/recipes?_method=DELETE" method="post">
 
-    <input type="hidden" name="id" value="{{recipe.id}}">
-    
-    <div class="create">
-        <button type="submit" class="delete">Delete</button>
-    </div>
-    
-
-</form>
 
 <script>
     const formDelete = document.querySelector("#form-delete")
